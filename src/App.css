@@ -191,10 +191,13 @@ body{
 	color: var(--bc);
 	position: relative;
 	word-break: break-word;
-	background: rgb(27,18,29);
-	background: -moz-linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%);
-	background: linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%);
+	/* background: rgb(27,18,29); */
+	/* background: -moz-linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%); */
+	/* background: -webkit-linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%); */
+	/* background: linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%); */
+	background: url("./assets/images/bgV2.png");
+	background-size: cover;
+	background-attachment: fixed;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b121d",endColorstr="#1b121d",GradientType=1);
 }
 body,
@@ -218,8 +221,8 @@ body:after{
 	position: fixed;
 	width: 270px;
 	height: 270px;
-	top: 42.8%; /* 463px */
-	right: 25%; /* 487px */
+	top: 42.8%;
+	right: 25%; 
 	background-color: var(--mc2);
 	border-radius: 100%;
 	-webkit-filter: blur(150px);
@@ -231,8 +234,8 @@ body:before{
 	position: fixed;
 	width: 270px;
 	height: 270px;
-	top: 27.5%; /* 297px */
-	left: 23.9%; /* 479px */
+	top: 27.5%; 
+	left: 23.9%; 
 	background-color: var(--mc1);
 	border-radius: 100%;
 	-webkit-filter: blur(150px);
@@ -1302,11 +1305,17 @@ a.full_link{
 }
 .fn_cs_desc p{
 	margin: 0;
-	font-size: 15px;
-	line-height: 20px;
+	font-size: 20px;
+		line-height: 30px;
 	margin-bottom: 41px;
 }
 
+@media(width<900px){
+	.fn_cs_desc p{
+		font-size: 15px;
+		line-height: 20px;
+	}
+}
 
 
 #fun_facts{
@@ -6596,5 +6605,32 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 	border: 2px solic;
 	border-bottom-color:#FE7BE5 ;
 	border-top-color: #504099 ;
+	cursor: pointer;
+}
+.metaportal_fn_button_3{
+    font-size:16px;
+    border-radius: 10px;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 0.5rem 1rem;
+	width: 100%;
+    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(to bottom, #504099c5 20%,#fe7be6c8 100%);
+	border: 2px solic;
+	border-bottom-color:#FE7BE5 ;
+	border-top-color: #504099 ;
+    margin: 2rem 0rem 0rem 0;
+	text-decoration: none;
+}
+@media(width<600px){
+	.metaportal_fn_button_3{
+		width: 100%;
+	}
+}
+.metaportal_fn_button_3:hover{
+	color: white;
+	
 	cursor: pointer;
 }

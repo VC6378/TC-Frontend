@@ -6,6 +6,7 @@ import Contact from '../sections/Contact'
 import OurJourney from '../sections/OurJourney'
 import Faq from '../sections/Faq'
 import FullPageLoader from '../layout/FullPageLoader';
+import StarfieldAnimation from '../layout/StarfieldAnimation';
 
 const Homepage = () => {
   const [isLoading, setIsLoading] = useState(true);
